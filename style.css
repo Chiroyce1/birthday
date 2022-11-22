@@ -1,0 +1,111 @@
+html,
+body {
+	width: 100%;
+	height: 90%;
+	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: system-ui;
+	font-weight: 300;
+}
+
+#text {
+	font-size: 70px;
+	text-shadow: 0 0 10px;
+	color: white;
+	cursor: pointer;
+	transition: font-size 0.99s;
+}
+
+#text:hover {
+	font-size: 80px;
+}
+
+.hov {
+	font-size: 100px;
+	text-shadow: 0 0 10px;
+	color: white;
+	margin: 30px;
+	transition: font-size 1s;
+}
+
+.hov:hover {
+	font-size: 120px;
+}
+
+.main {
+	text-align: center;
+}
+
+@keyframes birthday {
+	0% {
+		font-size: 1px;
+	}
+
+	100% {
+		font-size: 70px;
+	}
+}
+
+
+@keyframes icons {
+	0% {
+		font-size: 1px;
+	}
+
+	100% {
+		font-size: 100px;
+	}
+}
+
+.expand-title {
+	animation-timing-function: ease-in;
+	animation: birthday 3s;
+}
+
+.expand-icons {
+	animation-timing-function: ease-in;
+	animation: icons 3s;
+}
+
+/* #from {
+    text-shadow: 0 0 10px;
+    color: white;
+    left: 0;
+    bottom: 0;
+    float: left;
+    position: fixed;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 40vw;
+    font-size: 25px;
+}
+ */
+/* Centered version for from */
+
+#from {
+	text-shadow: 0 0 10px;
+	color: white;
+	/* left: 0; */
+	bottom: 0;
+	/* float: left; */
+	position: fixed;
+	/* margin-left: 20px; */
+	margin-bottom: 40px;
+	font-size: 2em;
+}
+
+.create {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	color: white;
+	background-color: black;
+	font-weight: 300;
+	transition: translateX()
+}
+
+#create {
+	color: white;
+}
