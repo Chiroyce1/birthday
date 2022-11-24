@@ -17,7 +17,7 @@ function generate() {
 	let url = btoa(JSON.stringify(json)).replaceAll("=", "");
 	// remove = in base64 as it doesnt seem to affect the output
 
-	link.href = `/#${url}`;
+	link.href = `../#${url}`;
 	link.innerText = `Send this link to the person`
 
 }
